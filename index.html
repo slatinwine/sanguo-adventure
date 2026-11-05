@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三国乱世行 · 文字冒险</title>
+<meta http-equiv="refresh" content="3;url=https://sanguo-adventure-15794.app.workbuddy.host/?sharecode=Q7JILFTY2H">
+<style>
+  :root {
+    --paper: #f5f1e8;
+    --ink: #2b2620;
+    --ink-soft: #5a5248;
+    --ink-faint: #948a7c;
+    --cinnabar: #a63a2b;
+    --border: #d8d0c0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Songti SC", "STSong", "SimSun", "Noto Serif SC", serif;
+    background: linear-gradient(rgba(245,241,232,.72), rgba(245,241,232,.95)),
+                url("https://sanguo-adventure-15794.app.workbuddy.host/assets/intro.png") center/cover no-repeat;
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 32px 20px; text-align: center; line-height: 1.9;
+  }
+  .title { font-size: 52px; letter-spacing: 16px; text-indent: 16px; font-weight: 700; }
+  .sub { margin-top: 8px; color: var(--ink-soft); letter-spacing: 5px; font-size: 15px; }
+  .divider { width: 60px; height: 3px; background: var(--cinnabar); margin: 24px 0; }
+  .lead { max-width: 520px; color: var(--ink-soft); font-size: 15px; }
+  .redirect-note {
+    margin-top: 28px; font-size: 14px; color: var(--ink-faint);
+    animation: pulse 1.6s infinite ease-in-out;
+  }
+  @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+  .btn-go {
+    display: inline-block; margin-top: 16px; padding: 12px 52px;
+    font-family: inherit; font-size: 17px; letter-spacing: 6px; text-indent: 6px; font-weight: 700;
+    background: var(--ink); color: var(--paper); text-decoration: none;
+    transition: background .15s ease;
+  }
+  .btn-go:hover { background: var(--cinnabar); }
+  .why { margin-top: 26px; max-width: 520px; font-size: 12.5px; color: var(--ink-faint); border-top: 1px dashed var(--border); padding-top: 14px; }
+</style>
+</head>
+<body>
+  <div class="title">三国乱世行</div>
+  <div class="sub">AI 主理人 · 文字冒险</div>
+  <div class="divider"></div>
+  <p class="lead">汉室倾颓，群雄并起。择一主而事之，或自立于乱世——AI 主理人依史实推演，赤壁、官渡、虎牢关，名场面等你亲历。</p>
+  <div class="redirect-note">AI 主理人须于官方通道推演，正在带你入局……</div>
+  <a class="btn-go" id="btn-go" href="https://sanguo-adventure-15794.app.workbuddy.host/?sharecode=Q7JILFTY2H">立即入局</a>
+  <p class="why">说明：本页为镜像入口。游戏的 AI 剧情推演与游玩统计运行在官方源站（sanguo-adventure-15794.app.workbuddy.host），页面将在 3 秒后自动跳转过去。</p>
+<script>
+  // meta refresh 兜底失效时用 JS 再跳一次
+  setTimeout(function () {
+    if (!document.hidden) {
+      try { window.location.replace("https://sanguo-adventure-15794.app.workbuddy.host/?sharecode=Q7JILFTY2H"); } catch (e) {}
+    }
+  }, 3000);
+</script>
+</body>
+</html>
